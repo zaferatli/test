@@ -4186,7 +4186,7 @@ function paginate_links( $args = '' ) {
 				$link .= $args['add_fragment'];
 
 				$page_links[] = sprintf(
-					'<a class="page-numbers" href="%s"',
+					'<a class="page-numbers" href="%s">%s</a>',
 					/** This filter is documented in wp-includes/general-template.php */
 					esc_url( apply_filters( 'paginate_links', $link ) ),
 					$args['before_page_number'] . number_format_i18n( $n ) . $args['after_page_number']
