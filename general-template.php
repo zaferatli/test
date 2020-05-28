@@ -4186,12 +4186,7 @@ function paginate_links( $args = '' ) {
 				$link .= $args['add_fragment'];
 
 				$page_links[] = sprintf(
-					'<a class="page-numbers" href="%s" style="	font-size: 16px;
-					background-color: #58585A;
-					padding: 1px 6px;
-					font-weight: bold;
-					border-radius: 4px;
-					color: #fff;">%s</a>',
+					'<a class="wp-pagenavi" href="%s"',
 					/** This filter is documented in wp-includes/general-template.php */
 					esc_url( apply_filters( 'paginate_links', $link ) ),
 					$args['before_page_number'] . number_format_i18n( $n ) . $args['after_page_number']
